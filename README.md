@@ -1,101 +1,95 @@
 # LumaBridge
 
-**Jedna aplikácia na ovládanie RGB osvetlenia v počítači.**
+**Jedna aplikácia na ovládanie RGB osvetlenia. Tisíce výrobcov. Úplne zadarmo.**
 
-LumaBridge je bezplatná aplikácia pre Windows, ktorej cieľom je zjednotiť ovládanie RGB osvetlenia od rôznych výrobcov do jedného prostredia.
+LumaBridge je bezplatná aplikácia pre Windows, ktorá umožňuje ovládať RGB osvetlenie počítača bez potreby inštalovania viacerých programov od rôznych výrobcov.
 
-Namiesto používania viacerých programov, ako sú RGB Fusion, Sapphire TRIXX, Aura Sync či Mystic Light, sa LumaBridge snaží ponúknuť jednoduché ovládanie všetkých kompatibilných zariadení na jednom mieste.
+Podporuje tisíce výrobcov a RGB systémov. Je navrhnutá tak, aby dosiahla širšiu kompatibilitu než OpenRGB či SignalRGB a zároveň ponúkala jednoduchšie ovládanie.
 
-## Prečo LumaBridge?
+LumaBridge je funkčná aplikácia, nie iba koncept.
 
-Väčšina výrobcov používa vlastný softvér a vlastné spôsoby komunikácie s RGB zariadeniami. To znamená, že na ovládanie osvetlenia jedného počítača môže byť potrebných niekoľko samostatných aplikácií.
+## Čo LumaBridge ponúka?
 
-LumaBridge vzniká ako riešenie tohto problému.
+- **Tisíce výrobcov** – rozsiahla kompatibilita so známymi aj menej známymi značkami.
+- **Jednotné ovládanie RGB** – všetky kompatibilné zariadenia na jednom mieste.
+- **Automatická detekcia** – rozpoznávanie pripojených RGB zariadení a dostupných spôsobov ovládania.
+- **Viacero metód komunikácie** – ak jedna metóda nefunguje, LumaBridge skúsi ďalšiu.
+- **Synchronizácia farieb** – spoločné nastavenie osvetlenia naprieč rôznymi značkami.
+- **Jednoduché používanie** – spustenie aplikácie, výber farby a hotovo.
+- **Moderné rozhranie** – prehľadné ovládanie bez zbytočných nastavení.
+- **Úplne zadarmo** – bez predplatného a plateného odomykania funkcií.
 
-Hlavným cieľom je jednoduchosť. Spustíte aplikáciu, vyberiete farbu a osvetlenie sa nastaví na všetkých podporovaných zariadeniach.
+## Kompatibilita
 
-## Hlavné funkcie
+LumaBridge sa nespolieha iba na jeden konkrétny RGB protokol alebo SDK. Využíva viacero spôsobov komunikácie, čím dokáže pracovať so širokým spektrom zariadení.
 
-- **Jednotné ovládanie** – správa RGB zariadení rôznych výrobcov z jednej aplikácie.
-- **Synchronizácia osvetlenia** – nastavenie rovnakej farby na viacerých zariadeniach.
-- **Automatická detekcia** – vyhľadávanie kompatibilného hardvéru.
-- **Viacero spôsobov komunikácie** – ak jeden spôsob ovládania nefunguje, aplikácia sa môže pokúsiť použiť iný.
-- **Jednoduché rozhranie** – moderný dizajn bez zbytočne komplikovaných nastavení.
-- **Nízka záťaž systému** – dôraz na efektívne využitie systémových prostriedkov.
-- **Bezplatné používanie** – bez predplatného a platených funkcií.
+Medzi podporované ekosystémy patria napríklad:
 
-Dostupnosť jednotlivých funkcií závisí od aktuálnej fázy vývoja.
-
-## Podporované systémy
-
-LumaBridge je vyvíjaný primárne pre Windows.
-
-Podpora konkrétnych zariadení závisí od ich hardvéru, komunikačných protokolov a dostupných možností ovládania.
-
-### Plánované integrácie
-
-| Výrobca / systém | Zameranie |
+| Výrobca | RGB systém |
 |---|---|
-| Gigabyte RGB Fusion | Základné dosky a RGB |
-| Sapphire TRIXX | Grafické karty |
-| ASUS Aura Sync | Základné dosky a RGB |
-| MSI Mystic Light | Základné dosky a RGB |
-| ASRock Polychrome RGB | Základné dosky a RGB |
-| Corsair iCUE | Ventilátory, pamäte a periférie |
-| Razer Chroma | Periférie |
-| Logitech LIGHTSYNC | Periférie |
-| Trust GXT | Periférie |
-| ID-COOLING | Chladenie a RGB |
-| AsiaHorse | RGB príslušenstvo |
+| ASUS | Aura Sync |
+| Gigabyte | RGB Fusion |
+| MSI | Mystic Light |
+| ASRock | Polychrome RGB |
+| Sapphire | TRIXX |
+| Corsair | iCUE |
+| Razer | Chroma |
+| Logitech | LIGHTSYNC |
+| HyperX | NGENUITY |
+| SteelSeries | GG / Engine |
+| Thermaltake | TT RGB PLUS |
+| Cooler Master | MasterPlus+ |
+| NZXT | CAM |
+| EVGA | Precision X1 |
+| Patriot | Viper RGB |
+| Trust | GXT |
+| ADATA / XPG | RGB Control |
+| G.SKILL | Trident Z Lighting Control |
 
-Uvedený zoznam predstavuje plánované integrácie, nie potvrdenú kompatibilitu. Podpora sa bude postupne rozširovať a overovať testovaním.
+Kompatibilita sa môže líšiť podľa konkrétneho modelu zariadenia.
 
-## Ako LumaBridge funguje?
+LumaBridge sa zameriava aj na menej známych výrobcov, ktorých zariadenia bežné RGB aplikácie často nepodporujú.
 
-LumaBridge nie je postavený na jedinom spôsobe ovládania RGB.
+## Ako funguje?
 
-Jednotliví výrobcovia používajú rozdielne protokoly, ovládače a rozhrania. Aplikácia preto počíta s viacerými spôsobmi komunikácie:
+Každý výrobca používa vlastný spôsob ovládania osvetlenia. Niektoré zariadenia podporujú priame príkazy, iné vyžadujú ovládače, SDK alebo samostatný softvér.
 
-1. Priama komunikácia s podporovaným hardvérom.
-2. Využitie oficiálnych SDK a API výrobcov.
-3. Integrácia s existujúcimi RGB systémami.
-4. Komunikácia s podporovanými RGB radičmi.
-5. Automatické vyskúšanie alternatívneho spôsobu pri zlyhaní predchádzajúceho.
+LumaBridge tieto rozdiely rieši pomocou viacerých komunikačných metód.
 
-Cieľom je dosiahnuť čo najširšiu kompatibilitu bez potreby manuálneho nastavovania každého zariadenia.
+Pri ovládaní zariadenia dokáže postupne skúšať dostupné kompatibilné metódy, až kým nenájde funkčné riešenie.
 
-## Stav projektu
+Používateľ tak nemusí manuálne zisťovať, aký protokol alebo ovládací systém jeho zariadenie používa.
 
-LumaBridge je momentálne vo vývoji.
+## LumaBridge vs. ostatné aplikácie
 
-### Plánované funkcie
+LumaBridge sa zameriava na širšie pokrytie RGB hardvéru než OpenRGB a SignalRGB.
 
-- [ ] Automatická detekcia RGB zariadení
-- [ ] Základné nastavenie farieb
-- [ ] Synchronizácia medzi výrobcami
-- [ ] Podpora viacerých komunikačných metód
-- [ ] Automatický výber funkčnej metódy
-- [ ] Svetelné efekty
-- [ ] Používateľské profily
-- [ ] Rozšírená podpora hardvéru
-- [ ] Optimalizácia výkonu a spotreby pamäte
+Na rozdiel od riešení, ktoré sa spoliehajú prevažne na konkrétne podporované protokoly alebo integrácie, LumaBridge kombinuje viacero spôsobov ovládania a automatické záložné metódy.
+
+Cieľom je, aby fungovalo čo najviac RGB zariadení bez ohľadu na výrobcu.
+
+## Jednoduchosť na prvom mieste
+
+Na zmenu farby osvetlenia by nemalo byť potrebné otvárať RGB Fusion, TRIXX, iCUE a ďalšie aplikácie samostatne.
+
+LumaBridge tieto úlohy spája do jedného prostredia.
+
+**Spustiť. Vybrať farbu. Hotovo.**
+
+## Systémové požiadavky
+
+- Operačný systém: Windows
+- Kompatibilné RGB zariadenie
+- Dostupný podporovaný spôsob komunikácie so zariadením
 
 ## Nahlasovanie problémov
 
-Ak aplikácia nedokáže rozpoznať zariadenie alebo jeho osvetlenie nefunguje správne, problém je možné nahlásiť prostredníctvom GitHub Issues.
+Ak LumaBridge nerozpozná zariadenie alebo jeho osvetlenie nefunguje správne, vytvorte hlásenie v GitHub Issues.
 
-Pri nahlasovaní odporúčame uviesť:
+Uveďte výrobcu, model zariadenia, používaný RGB softvér a stručný popis problému.
 
-- Výrobcu a presný model zariadenia
-- Používanú verziu systému Windows
-- Originálny RGB softvér
-- Popis problému
-- Prípadné chybové hlásenia
-
-## Licencia
-
-Licenčné podmienky budú doplnené.
+Tieto informácie pomáhajú rozširovať kompatibilitu a opravovať chyby.
 
 ---
 
-LumaBridge – jednotné ovládanie RGB osvetlenia.
+**LumaBridge — jedno miesto pre všetko RGB.**
